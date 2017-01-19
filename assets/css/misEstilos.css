@@ -1,0 +1,216 @@
+h1 a{
+	border-bottom: 0px;
+}
+
+h2{
+	color:black;
+}
+
+p{
+	color:#404040;
+}
+#top h2{
+	color:#ffffff;
+}
+#top p{
+	color: #f2f2f2;
+}
+
+#main > section.one{
+		height: 650px;
+}
+#nav ul li a:hover{
+	background: rgba(0, 0, 0, 0.15);
+	color: #fff;
+}
+
+#header .icons a, #nav ul li a, #nav ul li a span:before{
+	color: #b3b3b3;
+}
+
+.top #logo p{
+	color:#fff;
+}
+
+.row div{
+	width: 100%;
+	/*importante el siguiente float, que le dara al div separador consistencia*/
+	float: left;
+}
+
+.image .fit{
+	display: block;
+	width: 30%;
+	float: left;
+}
+
+.row article{
+	width: 100%;
+	float: left;
+}
+
+/*quitarle el margen a los enlaces-articulos cuando la resolucion sea grande y esten en el exterior. La resolucion estandar se dio en los estilos por defecto*/
+.image.fit.ext, .image.fit.ext{
+		margin-right: 0;
+}
+
+.three img{
+	width: 100%;
+	border-radius: 10px;
+}
+#portada{
+	width: 80%;
+	position: absolute;
+	left: 300px;
+	right: 0px;
+	z-index: -1;
+}
+
+#main section.cover{
+	padding: 0;
+}
+
+#top h2, #top header > p{
+	width: 75%;
+	margin: auto;
+	padding-top: 0;
+	margin-top: 1em;
+	background-color: #f7fbfe;
+	border: 0.5px;
+	border-style: dotted;
+	border-radius: 10px;
+}
+#top header > p{
+	width: 50%;
+	padding: 0 5px;
+}
+#top h2, #top p, #top a{
+	color: black;
+	font-weight: bold;
+}
+
+#top .container footer a{
+	background-color: black;
+	margin-top: 8em; 
+}
+
+#main > section.dark a:hover{
+	color: grey;
+}
+
+#feedback > p{
+	margin-bottom: 0;
+	display: inline;
+}
+
+#feedback > p span{
+	background-color: #ffa5a5;
+	border: 0.1px;
+	border-radius: 10px;
+	padding: 0 8px;
+	font-weight: bold;
+}
+
+.item{
+	border-style: solid;
+	border-width: 1px;
+}
+
+.item:hover{
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.item h3:hover{
+	color: #E27689;
+	border-color: grey;
+}
+
+.item header{
+	padding-top: 0;
+}
+
+article header h3{
+	font-weight: bold;
+	border-style: dotted;
+	border-width: 1px 0 0 0;
+}
+
+article header p{
+	line-height: 1.25em;
+	padding:0 0.25em 0 0.25em;
+}
+
+article header .paClave{
+	background-color: #FFDA4C;
+	padding: 0 0.15em 0 0.15em;
+}
+
+/**tablets-grandes**/
+@media screen and (max-width: 1250px){
+	#logo h1{
+		margin-left: 50px;
+	}
+
+	#top h2, #top header > p{
+		width: 75%;
+		padding: 0 5px;
+	}
+
+	.row div{
+		/*importante float que le quitara al div separador consistencia*/
+		float: none;
+	}
+
+	/*cambio de anchura de articulos para resoluciones pequeñas*/
+	.image.fit{
+		width: 48%;
+		margin: 0 1em 1em 0;
+	}
+
+	/*la clase ex deja de ser valida, ahora impar / par ya que la estructura ha cambiado*/
+	.image.fit.impar{
+		/*si subo el portfolio con 4 piezas, habra que poner none en float*/
+		float: left;
+    	margin-right: 1em;
+	}
+
+	.image.fit.par{
+		margin-right: 0;
+	}
+}
+
+/**tablets**/
+@media screen and (max-width: 769px){
+	#logo h1{
+		width: 75%;
+		margin-left: 50px;
+	}
+	#logo{
+
+	}
+	.image.fit{
+		width: 48%;
+		float: left;
+	}
+	.row .dos{
+		margin: 0;
+	}
+}
+/**smartphones**/
+@media screen and (max-width: 600px){
+	.image.fit{
+		width: 100%;
+	}
+
+	.row .item{
+		margin-bottom: 16px;
+	}
+
+}
+@media screen and (max-width: 400px){
+	#top .container footer a{
+		margin-top: 7em;
+	}
+
+}
+
